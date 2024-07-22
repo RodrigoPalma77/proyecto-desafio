@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Dark blue */
+  --Dark_blue_100: #609ed4;
+  --Dark_blue_200: #356ea9;
+  --Dark_blue_300: #0a3871;
+  --Dark_blue_400: #072b61;
+  --Dark_blue_500: #052051;
+  /* Light blue */
+  --Light_blue_100: #f3f5fc;
+  --Light_blue_200: #eff1fa;
+  --Light_blue_300: #e9ecf8;
+  --Light_blue_400: #aab2d5;
+  --Light_blue_500: #757fb2;
+  /* Gray */
+  --Gray_100: #ced4da;
+  --Gray_200: #adb5bd;
+  --Gray_300: #868e96;
+  --Gray_400: #495057;
+  --Gray_500: #343a40;
+}
+
+body {  
+  color: var(--Dark_blue_300);
+  background-color: var(--Light_blue_100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  
+}
+header {
+  margin: 0 0 0 100px;
+}
+#text,
+#textSalida {
+  appearance: none;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: var(--Dark_blue_300);
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  text-align: left;
+}
+#text::placeholder,
+#text:focus-visible {
+  color: #0a3871;
+ 
+}
+
+.Logo {
+  color: var(--Dark_blue_300);
+  font-size: 90px;
+  text-shadow: 2px 2px 2px var(--Gray_300) ;
+}
+
+
+.contenido {
+  font-family: "Inter", sans-serif;
+  height: 85vh;
+  display: flex;
+  gap: 50px;
+  margin-left: 170px;
+}
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 80%;
+}
+
+.terminos p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.section1 {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section2 {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 90%;
+  background-color: white;
+  border-radius: 32px;
+  padding: 32px;
+  align-content: center;
+
+  text-align: center;
+  box-shadow: 0 8px 10px;
+}
+h2.textoParaRetirar {
+  color: var(--Gray_500);
+}
+p.textoParaRetirar2 {
+  color: var(--Gray_400);
+}
+
+.contentButton,
+.contentButtonC {
+  display: flex;
+  justify-content: space-between;
+}
+.contentButtonC {
+  color: var(--Dark_blue_300);
+  justify-content: center;
+}
+button.boton {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  width: 228px;
+  height: 67px;
+  border: solid 1px var(--Dark_blue_300);
+  border-radius: 24px;
+}
+.boton1 {
+  color: var(--Light_blue_100);
+  background-color: var(--Dark_blue_300);
+}
+.botonCopia,
+.boton2 {
+  color: var(--Dark_blue_300);
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
+  color: var(--Light_blue_100);
+  background-color: var(--Dark_blue_300);
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  align-content: center;
+}
+section.footer_redes{
+  width: 100dvw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+div.redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+  border-top: 1px solid var(--Gray_200);
+  
+}
+img.Logo_redes{
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+a{
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--Light_blue_200);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--Light_blue_100);
+  text-shadow: 1px 1px 2px var(--Gray_300);
+}
+
+@media (max-width: 57.5em) {
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terminos p {
+    font-size: 16px;
+  }
+  .contentButton {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .boton1,
+  .boton2,
+  .botonCopia {
+    width: 48%;
+    border-radius: 16px;
+    
+  }
+  .boton1:hover,
+  .boton2:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .section2 {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  
+  .textoParaRetirar2 {
+    width: 100%;
+    top: 5%;
+  }
+  .imagen, .textoParaRetirar {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+ .footer {
+  width: 100%;
+ }
+
+}

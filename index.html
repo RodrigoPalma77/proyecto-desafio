@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Emcryptador Challenge</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="Logo">
+      a
+    </h1>
+  </header>
+  <div class="contenido">
+    <div class="section1">
+      <input placeholder="Ingresa texto aqui" type="text" class="texto texto1" id="text"></input>
+      <div class="terminos">
+        <img src="./img/bi_exclamation-circle-fill.png" alt="exclamation">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      <div class="contentButton">
+        <button onclick="encriptar()" class="boton boton1">Encriptar</button>
+        <button onclick="desencriptador()" class="boton boton2">Desencriptar</button>
+      </div>
+    </div>
+    <div class="section2">
+      <img class="imagen"    id="imagen" src="./img/Muñeco.png" alt="Imagen">
+      <p id="textSalida"></p>
+      <h2 class="textoParaRetirar">
+        Ningún mensaje fue encontrado
+      </h2>
+      <p class="textoParaRetirar2">
+        Ingresa texto que desees encriptar o desencriptar
+      </p>
+      <div class="contentButtonC" style="display: none;">
+        <button class="boton botonCopia">Copiar</button>
+      </div>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <strong>
+      Diseñado por:
+    </strong>
+    <i>Rodrigo Palma Mena</i>
+    <section class="footer_redes">
+      <div class="redes footer_redes_Gmail">
+        <img class="Logo_redes" src="./img/instagram.png" alt="" srcset="">
+        <a href="https://www.instagram.com">instagram</a>
+      </div>
+      <div class="redes footer_redes_GitHub">
+        <img class="Logo_redes" src="./img/github.png" alt="" srcset="">
+        <a href="https://www.github.com">GitHub</a>
+      </div>
+      <div class="redes footer_redes_linkin">
+        <img class="Logo_redes" src="./img/linkedin.png" alt="" srcset="">
+        <a href="https://www.linkedin.com">Linkedin</a>
+      </div>
+    </section>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
